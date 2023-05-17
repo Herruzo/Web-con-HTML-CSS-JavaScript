@@ -1,0 +1,414 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     /*No es necesario poner * si tienes un fichero reset.css (normalize)*/
+ }
+ 
+ body {
+     background-image: url("../assets/images/fondo2.jpg");
+     font-size: 16px;
+     width: 100%;
+     height: auto;
+     max-width: 1900px;
+     margin: 0 auto;
+     padding: 0 auto;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ /******************************************************************************************************************************************************************************************************************************************************                                        HEADER  *******************************************************************************************************************************************************************************************************************************************************/
+ /* Pantalla ordenador */
+ /*******************************************************************************************************************************************************************************/
+ 
+ .barra_menu {
+     background: transparent;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     position: fixed;
+     height: 60px;
+     z-index: 3;
+ }
+ 
+ .no_estilo {
+     list-style: none;
+ }
+ 
+ .centrar {
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ h1 {
+     margin-top: 0;
+     padding-top: 0;
+     height: 60px;
+ }
+ 
+ .logo img {
+     margin-top: 0;
+     padding-top: 5px;
+     padding-left: 30px;
+     height: 80px;
+     width: 80px;
+ }
+ 
+ .burger {
+     visibility: hidden;
+ }
+ 
+ .fondo_content {
+     background: #d5a7709e
+ }
+ 
+ .content_menu {
+     width: 90%;
+     display: flex;
+     justify-content: flex-end;
+ }
+ 
+ .menu a {
+     color: black;
+     font-weight: bold;
+     text-decoration: none;
+     font-size: 1.2rem;
+     padding: 0 40px 0 40px;
+ }
+ 
+ .menu a:hover {
+     color: red;
+ }
+ 
+ .banner {
+     height: 500px;
+     width: 100%;
+     margin-top: 0;
+     padding-top: 0;
+     background-image: url("../assets/images/sala.jpg");
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+ 
+ .margen_header {
+     height: 100px;
+     width: 100%;
+ }
+ /******************************************************************************************************************************************************************************************************************************************************                                        HEADER  *******************************************************************************************************************************************************************************************************************************************************/
+ /* Pantalla Tablet */
+ /*******************************************************************************************************************************************************************************/
+ 
+ @media (max-width:991px) {
+     .content_menu {
+         width: 90%;
+         justify-content: space-around;
+     }
+     .menu a {
+         padding: 0;
+     }
+     .banner {
+         height: 400px;
+         width: 100%;
+     }
+     .content_p_img {
+         display: flex;
+         flex-direction: column-reverse;
+     }
+     .content_p_img img {
+         padding-bottom: 15px;
+     }
+ }
+ /******************************************************************************************************************************************************************************************************************************************************                                        HEADER  *******************************************************************************************************************************************************************************************************************************************************/
+ /* Pantalla Movil */
+ /*******************************************************************************************************************************************************************************/
+ 
+ @media (max-width: 767px) {
+     .burger {
+         width: 80px;
+         height: 80px;
+         padding-right: 30px;
+         visibility: visible;
+     }
+     .content_menu {
+         flex-direction: column;
+         height: 0;
+         overflow: hidden;
+     }
+     .menu {
+         text-align: center;
+         background: #555;
+         border-bottom: 2px solid white;
+         height: 35px;
+         padding-top: 5px;
+     }
+     .menu a {
+         color: white;
+     }
+     .menu_movil {
+         height: auto;
+         padding-top: 80px;
+     }
+     .banner {
+         height: 250px;
+         width: 100%;
+     }
+     .content_main {
+         flex-direction: column;
+     }
+ }
+ /***********************************************************************************************************************************************/
+ /***************************************************** BODY ************************************************************************************/
+ /***********************************************************************************************************************************************/
+ 
+ .banner h2 {
+     text-align: center;
+     font-size: 2rem;
+     margin: 0px;
+ }
+ 
+ .banner h3 {
+     font-size: 1.5rem;
+     font-style: italic;
+     margin: 0;
+ }
+ 
+ .banner a {
+     text-decoration: none;
+     color: rgb(24, 23, 22);
+     font-size: 1.5rem;
+     line-height: 10px;
+ }
+ 
+ .banner a p {
+     margin: 10px 0;
+ }
+ 
+ .content_main {
+     display: flex;
+     margin: 2%;
+ }
+ 
+ .content_section {
+     width: 100%;
+     margin-right: 15px;
+ }
+ 
+ .contenido h2 {
+     padding: 20px;
+     text-align: center;
+ }
+ 
+ .contenido {
+     background: rgb(241, 224, 193, 0.71);
+     padding: 20px;
+     margin-top: 15px;
+     width: auto;
+     border-radius: 20px;
+ }
+ 
+ .content_p_img {
+     display: flex;
+ }
+ 
+ .content_p_img img {
+     width: auto;
+     height: auto;
+     max-width: 300px;
+     max-height: 300px;
+     padding-left: 20px;
+ }
+ 
+ aside {
+     max-width: 400px;
+     min-width: 30%;
+     background: rgb(241, 224, 193, 0.71);
+     padding: 20px;
+     margin-top: 15px;
+     border-radius: 20px;
+ }
+ 
+ aside h2 {
+     padding: 20px 0;
+     text-align: center;
+ }
+ /***********************************************************************************************************************************************/
+ /*************************************************** FOOTER *************************************************************************************/
+ /***********************************************************************************************************************************************/
+ 
+ footer {
+     width: 100%;
+     height: auto;
+     background: #d5a7709e;
+     padding-bottom: 0;
+     margin-bottom: 0;
+ }
+ 
+ .footer_principal section ul {
+     padding: 0;
+     font-weight: bold;
+ }
+ 
+ .footer_principal {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .padding_h2_footer {
+     padding: 20px 0;
+ }
+ 
+ .contenedor_contacto {
+     padding-left: 20px;
+ }
+ 
+ .contacto_direccion {
+     display: flex;
+ }
+ 
+ .logo_direc {
+     display: flex;
+     align-items: center;
+     padding-right: 10px;
+ }
+ 
+ .direccion p {
+     margin: 2px;
+     font-weight: bold;
+     font-style: italic;
+ }
+ 
+ .tele_email p {
+     font-weight: bold;
+     font-style: italic;
+     padding-top: 5px;
+ }
+ 
+ .aviso ul li {
+     margin-bottom: 30px;
+ }
+ 
+ .aviso ul li a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ .siguenos {
+     padding-right: 30px;
+ }
+ 
+ .redes {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .copyright p {
+     height: 15px;
+     text-align: center;
+     font-size: 0.8rem;
+     padding: 0;
+     margin: 40px 0 0 0;
+ }
+ 
+ @media (max-width: 767px) {
+     .footer_principal {
+         flex-direction: column-reverse;
+     }
+ }
+ /***********************************************************************************************************************************************/
+ /*************************************************** Presupuesto *************************************************************************************/
+ /***********************************************************************************************************************************************/
+ 
+ .contenedor_form {
+     width: 70%;
+     min-width: 350px;
+     padding: 30px;
+     background: rgb(241, 224, 193, 0.71);
+     margin-bottom: 50px;
+     border-radius: 20px;
+     border: outset black 2px;
+ }
+ 
+ fieldset {
+     margin: 10px;
+ }
+ 
+ .presupuesto_estimado {
+     margin: 15px 0;
+     font-size: 1.1rem;
+     font-weight: bold;
+ }
+ 
+ .boton_enviar {
+     margin: 10px 0;
+     padding: 0 5px;
+ }
+ 
+ @media (max-width: 767px) {
+     .position_input {
+         display: flex;
+         flex-direction: column;
+         padding: 10px 0;
+     }
+ }
+ /***********************************************************************************************************************************************/
+ /***************************************************  Galeria  *************************************************************************************/
+ /***********************************************************************************************************************************************/
+ 
+ .galeria {
+     background: rgb(241, 224, 193, 0.71);
+     width: 95%;
+ }
+ 
+ .galeria h2 {
+     text-align: center;
+     padding: 30px 0 20px 0;
+ }
+ 
+ .contenedor_galeria {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     margin: auto;
+     border-radius: 20px;
+     padding: 20px;
+     margin-bottom: 50px;
+ }
+ 
+ .galeria_img {
+     width: 300px;
+     height: 200px;
+     object-fit: cover;
+     padding: 5px;
+     border-radius: 15px;
+     filter: brightness(70%);
+     border: outset black 2px;
+ }
+ 
+ .galeria_img:hover {
+     filter: brightness(100%);
+ }
+ /***********************************************************************************************************************************************/
+ /***************************************************  Contacto  *************************************************************************************/
+ /***********************************************************************************************************************************************/
+ 
+ .contenedor_mapa {
+     width: 98%;
+     height: 400px;
+     background: rgb(241, 224, 193, 0.71);
+     margin: auto;
+     margin-bottom: 50px;
+     border-radius: 20px;
+     border: outset black 2px;
+     z-index: 1;
+ }
+ 
+ @media (max-width: 767px) {
+     .contenedor_mapa {
+         height: 700px;
+     }
+ }
